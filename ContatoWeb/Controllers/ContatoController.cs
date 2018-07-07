@@ -11,7 +11,7 @@ namespace ContatoWeb.Controllers
 {
     public class ContatoController : ApiController
     {
-        private SqlConnection conn = new SqlConnection("Server=tcp:aualposmauro.database.windows.net,1433;Initial Catalog=bdcontato;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        private SqlConnection conn = new SqlConnection("Server=tcp:aualposmauro.database.windows.net,1433;Initial Catalog=bdcontato;Persist Security Info=False;User ID=mauro;Password=H1per_tec;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         
         // Teste
         public string Get()
