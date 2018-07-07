@@ -12,7 +12,7 @@ namespace ContatoWeb.Controllers
         // Teste
         public string Get()
         {
-            return "Hello World";
+            return "Funciona realmente viu!";
         }
     }
 }
