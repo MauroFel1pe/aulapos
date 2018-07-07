@@ -14,7 +14,7 @@ namespace ContatoWeb.Controllers
         private SqlConnection conn = new SqlConnection("Server=tcp:aulaposmauro2.database.windows.net,1433;Initial Catalog=bdcontato2;Persist Security Info=False;User ID=mauro;Password=a1a2a3a4a5a6_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         
         // Teste
-        public string Get()
+        public List<Contato> Get()
         {
             var lista = new List<Contato>();
 
@@ -37,7 +37,8 @@ namespace ContatoWeb.Controllers
             }
 
             conn.Close();
-            return reader.GetString(0);
+
+            return lista;
         }
     }
 
