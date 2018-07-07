@@ -5,10 +5,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Results;
 
 namespace ContatoWeb.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class ContatoController : ApiController
     {
         private SqlConnection conn = new SqlConnection("Server=tcp:aulaposmauro2.database.windows.net,1433;Initial Catalog=bdcontato2;Persist Security Info=False;User ID=mauro;Password=a1a2a3a4a5a6_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
