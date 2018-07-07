@@ -9,6 +9,7 @@ namespace ContatoWeb.Controllers
 {
     public class ContatoController : ApiController
     {
+        // Teste
         public string Get()
         {
             return "Hello World";
